@@ -1,2 +1,2 @@
-# c_learning
+# C_learning
 C learning
