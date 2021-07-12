@@ -1,2 +1,2 @@
 # C_learning
-C learning
+It's a repo about C learning.
