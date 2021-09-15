@@ -1,8 +1,8 @@
-/*two_func.c -- One file with two functions.*/
+/* two_func.c -- One file has two functions*/
+
 #include <stdio.h>
 
-void butler(void); /*Prototype function ANSI/ISO C*/
-
+void butler(void); /* ANSI/ISO C function prototype.*/
 int main(void)
 {
 	printf("I will summon the butler function.\n");
@@ -11,7 +11,7 @@ int main(void)
 	return 0;
 }
 
-void butler(void)
+void butler(void) /* Start function definition.*/
 {
 	printf("You rang, sir?\n");
 }
