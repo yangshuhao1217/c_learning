@@ -1,7 +1,10 @@
 # General
 .idea/
 .vscode/
-.vs
+.vs/
+.DS_Store
+.AppleDouble
+.LSOverride
 
 # Prerequisites
 *.d
