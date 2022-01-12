@@ -21,7 +21,7 @@ int main(void)
 	s_gets(library.author, MAXAUTL);
 	printf("Now enter the value.\n");
 	scanf("%f", &library.value);
-	printf("%s by %s: $%.2f\n", library.title,
+	printf("%s by %s: $%2.f\n", library.title,
 			library.author, library.value);
 	printf("%s: \"%s\" ($%.2f)\n", library.author,
 			library.title, library.value);
