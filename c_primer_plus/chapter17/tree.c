@@ -182,7 +182,7 @@ static bool ToRight(const Item * i1, const Item * i2)
 {
 	int comp1;
 
-	if ((comp1 = strcmp(i1->petname, i1->petname)) > 0)
+	if ((comp1 = strcmp(i1->petname, i2->petname)) > 0)
 		return true;
 	else if (comp1 == 0 &&
 			strcmp(i1->petkind, i2->petkind) > 0)
@@ -259,7 +259,7 @@ static void DeleteNode(Trnode **ptr)
 			continue;
 		temp->right = (*ptr)->right;
 		temp = *ptr;
-		*ptr = (*ptr)->left;
+		*ptr =(*ptr)->left;
 		free(temp);
 	}
 }

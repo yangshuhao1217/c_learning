@@ -119,7 +119,7 @@ void findpet(const Tree * pt)
 	if (InTree(&temp, pt))
 		printf("is a member.\n");
 	else
-		printf("is not a memer.\n");
+		printf("is not a member.\n");
 }
 
 void droppet(Tree * pt)
