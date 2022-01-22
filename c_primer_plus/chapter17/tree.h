@@ -18,7 +18,7 @@ typedef struct trnode
 {
 	Item item;
 	struct trnode * left;  // pointer to right branch
-	struct srnode * right; // pointer to left branch
+	struct trnode * right; // pointer to left branch
 } Trnode;
 
 typedef struct tree

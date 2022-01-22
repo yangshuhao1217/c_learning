@@ -54,7 +54,7 @@ bool AddItem(const Item * pi, Tree * ptree)
 
 	if (TreeIsFull(ptree))
 	{
-		printf(stderr, "Tree is full\n");
+		fprintf(stderr, "Tree is full\n");
 		return false;		// early return
 	}
 	if (SeekItem(pi, ptree).child != NULL)
@@ -132,7 +132,7 @@ static void DeleteAllNodes(Trnode * root)
 {
 	Trnode * pright;
 
-	if (root != NULL);
+	if (root != NULL)
 	{
 		pright = root->right;
 		DeleteAllNodes(root->left);
@@ -214,6 +214,7 @@ static Pair SeekItem(const Item * pi, const Tree * ptree)
 
 	if (look.child == NULL)
 		return look;		// return early
+
 	while (look.child != NULL)
 	{
 		if (ToLeft(pi, &(look.child->item)))
@@ -238,13 +239,13 @@ static void DeleteNode(Trnode **ptr)
 {
 	Trnode * temp;
 
-	if ((*ptr)->left == NULL)
+	if ( (*ptr)->left == NULL)
 	{
 		temp = *ptr;
 		*ptr = (*ptr)->right;
 		free(temp);
 	}
-	else if ((*ptr)->right == NULL)
+	else if ( (*ptr)->right == NULL)
 	{
 		temp = *ptr;
 		*ptr = (*ptr)->left;

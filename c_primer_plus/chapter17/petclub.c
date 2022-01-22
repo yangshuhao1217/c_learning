@@ -24,16 +24,16 @@ int main(void)
 		switch (choice)
 		{
 			case 'a' : addpet(&pets);
-				   break;
+				break;
 			case 'l' : showpets(&pets);
-				   break;
+				break;
 			case 'f' : findpet(&pets);
-				   break;
+				break;
 			case 'n' : printf("%d pets in club\n",
 						   TreeItemCount(&pets));
-				   break;
+				break;
 			case 'd' : droppet(&pets);
-				   break;
+				break;
 			default  : puts("Switching error");
 		}
 	}
@@ -49,9 +49,9 @@ char menu(void)
 
 	puts("Nerfville Pet Club Membership Program");
 	puts("Enter the letter corresponding to your choice:");
-	puts("a) add a pet			l) show list of pets");
-	puts("n) number of pets		f) find pets");
-	puts("d) delete a pet			q) quit");
+	puts("a) add a pet          l) show list of pets");
+	puts("n) number of pets     f) find pets");
+	puts("d) delete a pet       q) quit");
 	while ((ch = getchar()) != EOF)
 	{
 		while (getchar() != '\n') 	// discard rest of line
@@ -76,9 +76,9 @@ void addpet(Tree * pt)
 	else
 	{
 		puts("Please enter name of pet:");
-		s_gets(temp.petname, SLEN);
+		s_gets(temp.petname,SLEN);
 		puts("Please enter pet kind:");
-		s_gets(temp.petkind, SLEN);
+		s_gets(temp.petkind,SLEN);
 		uppercase(temp.petname);
 		uppercase(temp.petkind);
 		AddItem(&temp, pt);
